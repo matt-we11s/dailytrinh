@@ -1,0 +1,49 @@
+/* Daily Trinh USA — shared tokens ("harvest ledger"). Fonts are OFL, self-hosted. */
+@font-face { font-family: "Fraunces"; src: url("../fonts/Fraunces-Variable.ttf") format("truetype"); font-weight: 100 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Fraunces"; src: url("../fonts/Fraunces-Italic-Variable.ttf") format("truetype"); font-weight: 100 900; font-style: italic; font-display: swap; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-Regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-Medium.ttf") format("truetype"); font-weight: 500; font-display: swap; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-SemiBold.ttf") format("truetype"); font-weight: 600; font-display: swap; }
+@font-face { font-family: "Be Vietnam Pro"; src: url("../fonts/BeVietnamPro-Bold.ttf") format("truetype"); font-weight: 700; font-display: swap; }
+
+:root {
+  --paper: oklch(96.5% 0.018 85);
+  --paper-2: oklch(93% 0.025 85);
+  --ink: oklch(24% 0.03 60);
+  --ink-2: oklch(42% 0.035 65);
+  --paddy: oklch(40% 0.085 148);
+  --paddy-deep: oklch(30% 0.06 150);
+  --paddy-tint: oklch(88% 0.04 145);
+  --on-deep: oklch(95% 0.02 120);
+  --on-deep-2: oklch(84% 0.04 130);
+  --persimmon: oklch(62% 0.17 42);
+  --persimmon-ink: oklch(50% 0.15 40);
+  --rule: oklch(80% 0.03 85);
+  --rule-strong: oklch(62% 0.04 75);
+
+  --font-display: "Fraunces", "Noto Serif", Georgia, serif;
+  --font-text: "Be Vietnam Pro", "Noto Sans", system-ui, sans-serif;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.display { font-family: var(--font-display); font-variation-settings: "SOFT" 50, "WONK" 0; font-optical-sizing: auto; }
+.fig { font-family: var(--font-text); font-variant-numeric: tabular-nums lining-nums; }
+
+/* Placeholder chip: missing content must never read as real content. */
+.ph {
+  display: inline-block;
+  font-family: var(--font-text); font-weight: 600; font-style: normal;
+  font-size: 0.72em; letter-spacing: 0.04em; line-height: 1.3;
+  color: var(--persimmon-ink);
+  border: 1px dashed var(--persimmon);
+  border-radius: 3px;
+  padding: 0.05em 0.4em;
+  background: oklch(97% 0.03 60);
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.ph::before { content: "\2192\00a0"; opacity: .7; }
+
+.furrows .row { stroke: var(--rule-strong); stroke-width: 1; fill: none; }
+.furrows .sprout path:first-child { stroke: var(--paddy); stroke-width: 1.4; fill: none; stroke-linecap: round; }
+.furrows .sprout path + path { fill: var(--paddy); }
