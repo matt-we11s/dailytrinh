@@ -120,6 +120,11 @@ html { scrollbar-color: var(--rule-strong) var(--paper); }
 .press-card figcaption { font-size: 0.9375rem; color: var(--ink-2); margin-top: 8px; }
 .press-card figcaption::before { content: "— "; }
 .press-card .read { margin-top: auto; font-weight: 600; }
+.press-lead { grid-column: 1 / -1; }
+.press-lead .headline { max-width: 46rem; }
+.press-lead .hl { font-size: clamp(1.5rem, 1.1rem + 1.4vw, 2rem); font-weight: 520; line-height: 1.2; letter-spacing: -0.01em; text-wrap: balance; }
+.press-lead .gloss { font-family: var(--font-display); font-style: italic; font-size: 1.125rem; font-weight: 420; color: var(--ink-2); margin-top: 8px; }
+.press-lead .gloss-note { font-size: 0.875rem; color: var(--ink-2); margin-top: 8px; }
 
 /* offer */
 .offer-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: start; }
@@ -156,5 +161,7 @@ html { scrollbar-color: var(--rule-strong) var(--paper); }
   .rank { font-size: 2.25rem; }
   .press-grid { grid-template-columns: 1fr; }
   .press-card { padding: 20px; }
+  .press-lead .hl { font-size: 1.375rem; }
+  .press-lead .gloss { font-size: 1rem; }
   .story-main p, .press-intro { font-size: 1.0625rem; }
 }
