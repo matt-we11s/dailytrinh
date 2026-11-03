@@ -165,3 +165,5 @@ html { scrollbar-color: var(--rule-strong) var(--paper); }
   .press-lead .gloss { font-size: 1rem; }
   .story-main p, .press-intro { font-size: 1.0625rem; }
 }
+/* Nov. 2026: one-reel proof point, ledger row with a link in its note */
+.entry.proof .note a { font-weight: 600; white-space: nowrap; }
